@@ -1,190 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aravind's Website</title>
-
+    <title>CSS Work</title>
     <style>
         body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
             font-family: Arial, sans-serif;
         }
-
         h1 {
+            font-size: 28px;
             text-align: center;
+            margin-bottom: 30px;
         }
-        .a {
-            text-align: left;
-            margin-left: 600px;
-            margin-right: 400px;
+        .div1 {
+            padding: 40px;
+            border-radius: 20px;
+            width: 380px;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
-        .b {
-            display: inline-block;
-            color: white;
-            background-color: rgb(255, 61, 61);
-            border-radius: 30px;
-            padding: 20px;
-            margin: 10px;
-            font-size: 18px;
-        }
-        .d {
-            display: inline-block;
-            color: white;
-            background-color: rgb(255, 238, 49);
-            border-radius: 30px;
-            padding: 20px;
-            margin: 10px;
-            font-size: 18px;
-        }
-        .e {
-            display: inline-block;
-            color: white;
-            background-color: rgb(190, 255, 110);
-            border-radius: 30px;
-            padding: 20px;
-            margin: 10px;
-            font-size: 18px;
-        }
-        .f {
-            display: inline-block;
-            color: white;
-            background-color: rgb(67, 190, 211);
-            border-radius: 30px;
-            padding: 20px;
-            margin: 10px;
-            font-size: 18px;
-        }
-        .g {
-            display: inline-block;
-            color: white;
-            background-color: rgb(16, 126, 195);
-            border-radius: 30px;
-            padding: 20px;
-            margin: 10px;
-            font-size: 18px;
-        }
-        .h {
-            display: inline-block;
-            color: white;
-            background-color: rgb(62, 64, 163);
-            border-radius: 30px;
-            padding: 20px;
-            margin: 10px;
-            font-size: 18px;
-        }
-        .i {
-            display: inline-block;
-            color: white;
-            background-color: rgb(255, 0, 0);
-            border-radius: 30px;
-            padding: 20px;
-            margin: 10px;
-            font-size: 18px;
+        .div2 {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 15px 0;
         }
         .c {
-            background-color: rgb(249, 108, 108);
-            padding: 10px 20px;
-            border-radius: 20px;
-            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+        }
+        .sp {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            color: white;
+            width: 260px;
+        }
+        .s {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            font-weight: bold;
         }
         .c1 {
-            background-color: rgb(252, 242, 124);
-            padding: 10px 15px;
-            border-radius: 20px;
-            margin-right: 10px;
+            background-color: rgb(255, 61, 61);
+        }
+        .sp1 {
+            background-color: rgb(255, 61, 61);
+        }
+        .s1 {
+            background-color: rgb(249, 108, 108);
         }
         .c2 {
-            background-color: rgb(212, 255, 159);
-            padding: 10px 15px;
-            border-radius: 20px;
-            margin-right: 10px;
+            background-color: rgb(255, 238, 49);
+        }
+        .sp2 {
+            background-color: rgb(255, 238, 49);
+            color: rgb(255, 255, 255);
+        }
+        .s2 {
+            background-color: rgb(252, 242, 124);
+            color: rgb(255, 255, 255);
         }
         .c3 {
-            background-color: rgb(130, 193, 204);
-            padding: 10px 15px;
-            border-radius: 20px;
-            margin-right: 10px;
+            background-color: rgb(190, 255, 110);
+        }
+        .sp3 {
+            background-color: rgb(190, 255, 110);
+            color: rgb(255, 255, 255);
+        }
+        .s3 {
+            background-color: rgb(212, 255, 159);
+            color: rgb(255, 255, 255);
         }
         .c4 {
-            background-color: rgb(75, 148, 194);
-            padding: 10px 15px;
-            border-radius: 20px;
-            margin-right: 10px;
+            background-color: rgb(67, 190, 211);
+        }
+        .sp4 {
+            background-color: rgb(67, 190, 211);
+        }
+        .s4 {
+            background-color: rgb(130, 193, 204);
         }
         .c5 {
-            background-color: rgb(94, 95, 160);
-            padding: 10px 15px;
-            border-radius: 20px;
-            margin-right: 10px;
+            background-color: rgb(16, 126, 195);
+        }
+        .sp5 {
+            background-color: rgb(16, 126, 195);
+        }
+        .s5 {
+            background-color: rgb(75, 148, 194);
         }
         .c6 {
-            background-color: rgb(255, 98, 98);
-            padding: 10px 15px;
-            border-radius: 20px;
-            margin-right: 10px;
-        }
-        .do{
-            color: rgb(255, 61, 61);
-            background-color: rgb(255, 61, 61);
-            padding: 4px 8px;
-            border-radius:50px;
-        }
-        .do1{
-            color: rgb(255, 238, 49);
-            background-color: rgb(255, 238, 49);
-            padding: 4px 8px;
-            border-radius:50px;
-        }
-        .do2{
-            color: rgb(190, 255, 110);
-            background-color: rgb(190, 255, 110);
-            padding: 4px 8px;
-            border-radius:50px;
-        }
-        .do3{
-            color: rgb(67, 190, 211);
-            background-color: rgb(67, 190, 211);
-            padding: 4px 8px;
-            border-radius:50px;
-        }
-        .do4{
-            color: rgb(16, 126, 195);
-            background-color: rgb(16, 126, 195);
-            padding: 4px 8px;
-            border-radius:50px;
-        }
-        .do5{
-            color: rgb(62, 64, 163);
             background-color: rgb(62, 64, 163);
-            padding: 4px 8px;
-            border-radius:50px;
         }
-        .do6{
-            color: rgb(255, 0, 0);
+        .sp6 {
+            background-color: rgb(62, 64, 163);
+        }
+        .s6 {
+            background-color: rgb(94, 95, 160);
+        }
+        .c7 {
             background-color: rgb(255, 0, 0);
-            padding: 4px 8px;
-            border-radius:50px;
         }
-        </style>
+        .sp7 {
+            background-color: rgb(255, 0, 0);
+        }
+        .s7 {
+            background-color: rgb(255, 98, 98);
+        }
+    </style>
 </head>
 <body>
-    <h1>How does CSS work</h1>
-    <div class="a">
-        <span class="do">o</span>
-        <span class="b"><span class="c">01</span>Selecting Elements</span><br>
-        <span class="do1">o</span>
-        <span class="d"><span class="c1">02</span>Establishing Visual Styles</span><br>
-        <span class="do2">o</span>
-        <span class="e"><span class="c2">03</span>Applying Cascading Rules</span><br>
-        <span class="do3">o</span>
-        <span class="f"><span class="c3">04</span>Styling Hierarchy</span><br>
-        <span class="do4">o</span>
-        <span class="g"><span class="c4">05</span>External Stylesheets</span><br>
-        <span class="do5">o</span>
-        <span class="h"><span class="c5">06</span>Rendering</span><br>
-        <span class="do6">o</span>
-        <span class="i"><span class="c6">07</span>Dynamic Changes</span><br>
+    <div class="div1">
+        <h1>HOW DOES CSS WORK?</h1>
+        <div class="div2">
+            <div class="c c1"></div>
+            <div class="sp sp1"><span class="s s1">01</span>Selecting Elements</div>
+        </div>
+        <div class="div2">
+            <div class="c c2"></div>
+            <div class="sp sp2"><span class="s s2">02</span>Establishing Visual Styles</div>
+        </div>
+        <div class="div2">
+            <div class="c c3"></div>
+            <div class="sp sp3"><span class="s s3">03</span>Applying Cascading Rules</div>
+        </div>
+        <div class="div2">
+            <div class="c c4"></div>
+            <div class="sp sp4"><span class="s s4">04</span>Styling Hierarchy</div>
+        </div>
+        <div class="div2">
+            <div class="c c5"></div>
+            <div class="sp sp5"><span class="s s5">05</span>External Stylesheets</div>
+        </div>
+        <div class="div2">
+            <div class="c c6"></div>
+            <div class="sp sp6"><span class="s s6">06</span>Rendering</div>
+        </div>
+        <div class="div2">
+            <div class="c c7"></div>
+            <div class="sp sp7"><span class="s s7">07</span>Dynamic Changes</div>
+        </div>
     </div>
 </body>
 </html>
