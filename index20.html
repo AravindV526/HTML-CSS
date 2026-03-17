@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aravind's Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #d0dbe5;
+            font-family: Arial;
+        }
+
+        .a {
+            padding: 10px;
+            height: 600px;
+            width: 400px;
+            background: aliceblue;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            border-radius: 20px;
+        }
+
+        #display {
+            grid-column: span 4;
+            height: 80px;
+            font-size: 30px;
+            text-align: right;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: #d0dbe5;
+        }
+
+        button {
+            font-size: 22px;
+            border: none;
+            border-radius: 10px;
+            background: #ffffff;
+            cursor: pointer;
+        }
+
+        button:active {
+            background: #cfd8dc;
+        }
+
+        .equal {
+            grid-column: span 2;
+            background: #4caf50;
+            color: white;
+        }
+
+        .clear {
+            background: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="a">
+        <input type="text" id="display" disabled>
+
+        <button onclick="append('+')"><i class="fa-solid fa-plus"></i></button>
+        <button onclick="append('-')"><i class="fa-solid fa-minus"></i></button>
+        <button onclick="append('')"><i class="fa-solid fa-xmark"></i></button>
+        <button onclick="append('/')"><i class="fa-solid fa-divide"></i></button>
+        
+        <button onclick="append('7')"><i class="fa-solid fa-7"></i></button>
+        <button onclick="append('8')"><i class="fa-solid fa-8"></i></button>
+        <button onclick="append('9')"><i class="fa-solid fa-9"></i></button>
+        <button onclick="append('4')"><i class="fa-solid fa-4"></i></button>
+        
+        <button onclick="append('5')"><i class="fa-solid fa-5"></i></button>
+        <button onclick="append('6')"><i class="fa-solid fa-6"></i></button>
+        <button onclick="append('1')"><i class="fa-solid fa-1"></i></button>
+        <button onclick="append('2')"><i class="fa-solid fa-2"></i></button>
+        
+        <button onclick="append('3')"><i class="fa-solid fa-3"></i></button>
+        <button onclick="append('0')"><i class="fa-solid fa-0"></i></button>
+        <button onclick="append('.')"><i class="fa-regular fa-circle-dot"></i></button>
+        <button onclick="clearDisplay()" class="clear"><i class="fa-solid fa-c"></i></button>
+
+        <button onclick="calculate()" class="equal"><i class="fa-solid fa-equals"></i></button>
+    </div>
+</body>
+
+</html>
